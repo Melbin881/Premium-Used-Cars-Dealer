@@ -124,7 +124,7 @@ padding-left: 5%;
 	position: absolute;
 	float: left;
 	z-index: 999;
-	width:124px;
+	width: 124px;
 	height: 124px;
 	padding-top: 9px;
 
@@ -208,6 +208,11 @@ padding-left: 5%;
   outline: none;
   border-bottom: 2px solid #C59E47; 
 }
+
+.ll{
+	height: 15rem;
+	width:15rem;
+}
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	font-family: 'BebasNeue Regular';
 	font-size: 13pt;
@@ -233,6 +238,7 @@ padding-left: 5%;
 .topnavbar .container{
 	margin-left: 10px !important;
 }
+
 .logo{
 	position: absolute;
 	top:0px;
@@ -377,6 +383,7 @@ font-size: 15.88pt;
 font-size: 10pt;
 }	
 }
+
  
 
 /* -----------------------------Second Navbar ---------------------------------------*/
