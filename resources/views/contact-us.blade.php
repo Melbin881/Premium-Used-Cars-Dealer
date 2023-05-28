@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('css')
+<link rel="stylesheet" type="text/css" href="{{ asset('asset/style/contactstyle.css') }}" />
+@endsection
+
 @section('contents')
     <div class="allcontain">
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
