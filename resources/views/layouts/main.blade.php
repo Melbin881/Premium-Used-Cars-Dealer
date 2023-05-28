@@ -12,39 +12,42 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/source/font-awesome-4.5.0/css/font-awesome.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/style/slider.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/style/mystyle.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('style/contactstyle.css') }}" />
 </head>
 
 <body>
 
+    <div class="header">
+        <ul class="socialicon">
+            <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </li>
+        </ul>
+        <ul class="givusacall">
+            <li>Give us a call : +91 7902307304</li>
+        </ul>
+        <ul class="logreg">
+            <li>
+                <a href="D:\GARAGE - HTML-CSS-Template\glassmorphism-login-form-tutorial-in-html-css\src\index.html">Login
+                </a>
+            </li>
+            <li>
+                <a href="#"><span class="register">Register</span></a>
+            </li>
+        </ul>
+    </div>
+
     <div class="allcontain">
-        <div class="header">
-            <ul class="socialicon">
-                <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                </li>
-            </ul>
-            <ul class="givusacall">
-                <li>Give us a call : +91 7902307304</li>
-            </ul>
-            <ul class="logreg">
-                <li>
-                    <a href="D:\GARAGE - HTML-CSS-Template\glassmorphism-login-form-tutorial-in-html-css\src\index.html">Login
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><span class="register">Register</span></a>
-                </li>
-            </ul>
-        </div>
+
         <!-- Navbar Up -->
         <nav class="topnavbar navbar-default topnav">
             <div class="container">
@@ -85,7 +88,7 @@
             </div>
         </nav>
     </div>
-    
+
 
     @yield('contents')
 
@@ -94,7 +97,7 @@
     <div class="bottommenu">
         <div class="bottomlogo">
             <span class="dotlogo">&bullet;</span>
-                <img class="ll" src="{{ asset('asset/image/logo.jpg') }}" alt="logo1" />
+            <img class="ll" src="{{ asset('asset/image/logo.jpg') }}" alt="logo1" />
             <span class="dotlogo">&bullet;</span>
         </div>
         <ul class="nav nav-tabs bottomlinks">
