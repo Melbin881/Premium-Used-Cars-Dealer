@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Highline Autohaus</title>
-    <meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia" />
-    <meta name="author" content="Web Domus Italia" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{asset('asset/source/bootstrap-3.3.6-dist/css/bootstrap.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('asset/source/font-awesome-4.5.0/css/font-awesome.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('asset/style/slider.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('asset/style/mystyle.css')}}" />
-</head>
+@section('contents')
 
-<body>
-    <!-- Header -->
     <div class="allcontain">
         <div class="header">
             <ul class="socialicon">
@@ -55,7 +41,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo" href="#"><img class="ll" src="{{asset('asset/image/logo.jpg')}}" alt="Logo Error" /></a>
+                    <a class="navbar-brand logo" href="#"><img class="ll" src="{{ asset('asset/image/logo.jpg') }}" alt="Logo Error" /></a>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="upmenu">
@@ -85,19 +71,19 @@
             </div>
         </nav>
     </div>
-    <!--_______________________________________ Carousel__________________________________ -->
+
     <div class="allcontain">
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="{{asset('asset/image/porsche thumbnail.jpg')}}" alt="oldcar" />
+                    <img src="{{ asset('asset/image/porsche thumbnail.jpg') }}" alt="oldcar" />
                     <div class="carousel-caption">
                         <h2>Porsche Cayman</h2>
                         <p>There Is No Substitute</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{asset('asset/image/lamborgini thumbnail.jpg')}}" alt="porche" />
+                    <img src="{{ asset('asset/image/lamborgini thumbnail.jpg') }}" alt="porche" />
                     <div class="carousel-caption">
                         <h2>Lamborgini Huracan</h2>
                         <p>
@@ -107,7 +93,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{asset('asset/image/mercedes thumbnail.jpg')}}" alt="benz" />
+                    <img src="{{ asset('asset/image/mercedes thumbnail.jpg') }}" alt="benz" />
                     <div class="carousel-caption">
                         <h2>Mercedes Benz AMG</h2>
                         <p>
@@ -187,7 +173,7 @@
             </nav>
         </div>
     </div>
-    <!-- ____________________Featured Section ______________________________-->
+
     <div class="allcontain">
         <div class="feturedsection">
             <h1 class="text-center">
@@ -199,7 +185,7 @@
                 <div class="col-lg-6 costumcol colborder1">
                     <div class="row costumrow">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img1colon">
-                            <img src="{{asset('asset/image/featurporch.jpg')}}" alt="porsche" />
+                            <img src="{{ asset('asset/image/featurporch.jpg') }}" alt="porsche" />
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon">
                             <div class="featurecontant">
@@ -231,7 +217,7 @@
                 <div class="col-lg-6 costumcol colborder2">
                     <div class="row costumrow">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 img2colon">
-                            <img src="{{asset('asset/image/featurporch1.jpg')}}" alt="porsche1" />
+                            <img src="{{ asset('asset/image/featurporch1.jpg') }}" alt="porsche1" />
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 txt1colon">
                             <div class="featurecontant">
@@ -294,7 +280,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car1.jpg')}}" alt="car1" />
+                        <img src="{{ asset('asset/image/car1.jpg') }}" alt="car1" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -316,7 +302,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -330,7 +316,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car2.jpg')}}" alt="car2" />
+                        <img src="{{ asset('asset/image/car2.jpg') }}" alt="car2" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -352,7 +338,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -366,7 +352,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car3.jpg')}}" alt="car3" />
+                        <img src="{{ asset('asset/image/car3.jpg') }}" alt="car3" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -388,7 +374,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +388,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car4.jpg')}}" alt="car4" />
+                        <img src="{{ asset('asset/image/car4.jpg') }}" alt="car4" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -424,7 +410,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -438,7 +424,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car5.jpg')}}" alt="car5" />
+                        <img src="{{ asset('asset/image/car5.jpg') }}" alt="car5" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -460,7 +446,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -474,7 +460,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car6.jpg')}}" alt="car6" />
+                        <img src="{{ asset('asset/image/car6.jpg') }}" alt="car6" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -496,7 +482,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -510,7 +496,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car7.jpg')}}" alt="car7" />
+                        <img src="{{ asset('asset/image/car7.jpg') }}" alt="car7" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -532,7 +518,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -546,7 +532,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="txthover">
-                        <img src="{{asset('asset/image/car8.jpg')}}" alt="car8" />
+                        <img src="{{ asset('asset/image/car8.jpg') }}" alt="car8" />
                         <div class="txtcontent">
                             <div class="stars">
                                 <div class="glyphicon glyphicon-star"></div>
@@ -568,7 +554,7 @@
                                     </p>
                                     <p class="paragraph2">
                                         Compare
-                                        <span class="icon"><img src="{{asset('asset/image/compicon.png')}}" alt="compicon" /></span>
+                                        <span class="icon"><img src="{{ asset('asset/image/compicon.png') }}" alt="compicon" /></span>
                                     </p>
                                 </div>
                             </div>
@@ -585,7 +571,7 @@
         <!-- _______________________________News Letter ____________________-->
         <div class="newslettercontent">
             <div class="leftside">
-                <img src="{{asset('asset/image/border.png')}}" alt="border" />
+                <img src="{{ asset('asset/image/border.png') }}" alt="border" />
                 <h1>NEWSLETTER</h1>
                 <p>
                     Subscribe to the COLLECTIONCARS mailing list to <br />
@@ -594,7 +580,7 @@
                 </p>
             </div>
             <div class="rightside">
-                <img class="newsimage" src="{{asset('asset/image/newsletter.jpg')}}" alt="newsletter" />
+                <img class="newsimage" src="{{ asset('asset/image/newsletter.jpg') }}" alt="newsletter" />
                 <input type="text" class="form-control" id="subemail" placeholder="EMAIL" />
                 <button>SUBSCRIBE</button>
             </div>
@@ -602,7 +588,7 @@
         <!-- ______________________________________________________Bottom Menu ______________________________-->
         <div class="bottommenu">
             <div class="bottomlogo">
-                <span class="dotlogo">&bullet;</span><img class="ll" src="{{asset('asset/image/logo.jpg')}}" alt="logo1" /><span class="dotlogo">&bullet;;</span>
+                <span class="dotlogo">&bullet;</span><img class="ll" src="{{ asset('asset/image/logo.jpg') }}" alt="logo1" /><span class="dotlogo">&bullet;;</span>
             </div>
             <ul class="nav nav-tabs bottomlinks">
                 <li role="presentation"><a href="#/" role="button">ABOUT US</a></li>
@@ -612,7 +598,7 @@
                 <li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>
             </ul>
             <p>Pre-Owned Used Cars</p>
-            <img src="{{asset('asset/image/line.png')}}" alt="line" /> <br />
+            <img src="{{ asset('asset/image/line.png') }}" alt="line" /> <br />
             <div class="bottomsocial">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -633,11 +619,4 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="{{asset('asset/source/bootstrap-3.3.6-dist/js/jquery.js')}}"></script>
-    <script type="text/javascript" src="{{asset('asset/source/js/isotope.js')}}"></script>
-    <script type="text/javascript" src="{{asset('asset/source/js/myscript.js')}}"></script>
-    <script type="text/javascript" src="{{asset('asset/source/bootstrap-3.3.6-dist/js/jquery.1.11.js')}}"></script>
-    <script type="text/javascript" src="{{asset('asset/source/bootstrap-3.3.6-dist/js/bootstrap.js')}}"></script>
-</body>
-
-</html>
+@endsection

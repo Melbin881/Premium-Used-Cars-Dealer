@@ -27,7 +27,7 @@ class LoginController extends Controller
         $this->guard()->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/login');
+        return redirect('/dashboard');
     }
 
     protected function authenticated(Request $request, $user)

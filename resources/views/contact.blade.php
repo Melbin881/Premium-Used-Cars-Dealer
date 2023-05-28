@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="UTF-8" />
-    <title>
-        Scarica gratis GARAGE Template html/css - Web Domus Italia - Web Agency
-    </title>
-    <meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia" />
-    <meta name="author" content="Web Domus Italia" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="style/slider.css" />
-    <link rel="stylesheet" type="text/css" href="style/mystyle.css" />
-    <link rel="stylesheet" type="text/css" href="style/contactstyle.css" />
-</head>
+@extends('layouts.main')
 
-<body>
-    <!-- Header -->
+@section('contents')
+
+
     <div class="allcontain">
         <div class="header">
             <ul class="socialicon">
@@ -86,7 +71,7 @@
             </div>
         </nav>
     </div>
-    <!--_______________________________________ Carousel__________________________________ -->
+
     <div class="allcontain">
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -206,16 +191,10 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="copyright">
-            &copy; Copy right 2016 | <a href="#">Privacy </a>|
-            <a href="#">Policy</a>
-        </div>
-        <div class="atisda">
-            Designed by
-            <a href="http://www.webdomus.net/">Web Domus Italia - Web Agency </a>
-        </div>
-    </div>
+
+    @endsection
+
+    @section('js')
 
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -241,10 +220,6 @@
         }
     </script>
 
-    <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
-    <script type="text/javascript" src="source/js/myscript.js"></script>
-    <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-
     <script>
         $(window).resize(function() {
             var new_height = $("#image_border").height();
@@ -259,8 +234,7 @@
             google.maps.event.addDomListener(window, "load", initialize());
         });
     </script>
-    <script type="text/javascript" src="source/js/myscript.js"></script>
-    <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
-</body>
 
-</html>
+
+
+@endsection

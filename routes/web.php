@@ -18,14 +18,7 @@ use App\Http\Controllers\Backend\DashboardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-// Route::get('contact-us', function () {
-//     return view('contact-us');
-// });
-
+Route::group(['prefix'=>'dashboard', 'namespace'=>''], function () {
 
 // Authentication Routes
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -42,5 +35,16 @@ Route::post('password/email', [ForgotPasswordController::class, 'sendResetLinkEm
 Route::get('password/reset/{token}', [ForgotPasswordController::class, 'showResetForm'])->name('password.reset');
 Route::post('password/reset', [ForgotPasswordController::class, 'reset'])->name('password.update');
 
-// Backend Dashboard
+});
+
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+
+Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('contact-us', function () {
+    return view('contact-us');
+});
