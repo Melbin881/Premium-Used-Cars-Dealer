@@ -74,6 +74,7 @@
                                 <li><a href="#">3</a></li>
                             </ul>
                         </li>
+
                         <li class="li-maxyear">
                             <a class="btn dropdown-toggle btn-costume" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Max Year
                                 <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
@@ -85,8 +86,14 @@
                         </li>
                         <li class="li-slideprice">
                             <p>
-                                <label class="slidertxt" for="amount">Price </label>
-                                <input class="priceslider" type="text" id="amount" readonly="readonly" />
+                                <label for="budget">Budget (INR):</label>
+                                <select id="budget" name="budget">
+                                    <option value="0">₹0</option>
+                                    <option value="1000">₹1000</option>
+                                    <option value="5000">₹5000</option>
+                                    <option value="10000">₹10000</option>
+                                </select>
+
                             </p>
                             <div id="slider-range"></div>
                         </li>
@@ -95,6 +102,7 @@
                                 <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </li>
+
                     </ul>
                 </div>
             </nav>

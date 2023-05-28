@@ -88,7 +88,6 @@
                                     <option value="10000">₹10000</option>
                                 </select>
 
-                                />
                             </p>
                             <div id="slider-range"></div>
                         </li>
@@ -97,6 +96,7 @@
                                 <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </li>
+                        
                     </ul>
                 </div>
             </nav>
