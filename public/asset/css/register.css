@@ -1,0 +1,35 @@
+/* Add your custom CSS styles for the registration page here */
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .register-form {
+    margin-bottom: 20px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .register-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .register-form .register-error {
+    color: red;
+  }
