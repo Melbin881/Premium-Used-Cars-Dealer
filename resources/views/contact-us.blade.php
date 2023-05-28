@@ -1,82 +1,13 @@
-
 @extends('layouts.main')
 
 @section('contents')
 
 
     <div class="allcontain">
-        <div class="header">
-            <ul class="socialicon">
-                <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                </li>
-            </ul>
-            <ul class="givusacall">
-                <li>Give us a call : +91 7902307304</li>
-            </ul>
-            <ul class="logreg">
-                <li><a href="#">Login </a></li>
-                <li>
-                    <a href="#"><span class="register">Register</span></a>
-                </li>
-            </ul>
-        </div>
-        <!-- Navbar Up -->
-        <nav class="topnavbar navbar-default topnav">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
-                        <span class="sr-only"> Toggle navigaion</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="ll" href="#"><img src="{{asset('asset/image/logo.png')}}" alt="logo" /></a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="upmenu">
-                <ul class="nav navbar-nav" id="navbarontop">
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
-                        <ul class="dropdown-menu dropdowncostume">
-                            <li><a href="#">Sport</a></li>
-                            <li><a href="#">Old</a></li>
-                            <li><a href="#">New</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DEALERS <span class="caret"></span></a>
-                        <ul class="dropdown-menu dropdowncostume">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="3">3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT
-                        </a>
-                    </li>
-                    <button><span class="postnewcar">POST NEW CAR</span></button>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div class="allcontain">
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="{{asset('asset/image/rolls-royce thumbnai.jpg')}}" alt="rollsroyce" />
+                    <img src="{{ asset('asset/image/rolls-royce thumbnai.jpg') }}" alt="rollsroyce" />
                     <div class="carousel-caption">
                         <h2>Rolls-royce</h2>
                         <p>
@@ -87,14 +18,14 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{asset('asset/image/bmw2.jpg')}}" alt="BMW" />
+                    <img src="{{ asset('asset/image/bmw2.jpg') }}" alt="BMW" />
                     <div class="carousel-caption">
                         <h2>BMW</h2>
                         <p>The Ultimate Driving Machine</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="{{asset('asset/image/mercedes thumbnail.jpg')}}" alt="benz" />
+                    <img src="{{ asset('asset/image/mercedes thumbnail.jpg') }}" alt="benz" />
                     <div class="carousel-caption">
                         <h2>Mercedes Benz AMG</h2>
                         <p>
@@ -167,12 +98,12 @@
             </nav>
         </div>
     </div>
-    
+
     <div class="allcontain">
         <div class="contact">
             <div class="newslettercontent">
                 <div class="leftside">
-                    <img id="image_border" src="{{asset('asset/image/border.png')}}" alt="border" />
+                    <img id="image_border" src="{{ asset('asset/image/border.png') }}" alt="border" />
                     <div class="contact-form">
                         <h1>Contact Us</h1>
                         <div class="form-group group-coustume">
@@ -192,11 +123,9 @@
             </div>
         </div>
     </div>
+@endsection
 
-    @endsection
-
-    @section('js')
-
+@section('js')
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
         var myCenter = new google.maps.LatLng(41.567197, 14.681526);
@@ -235,7 +164,4 @@
             google.maps.event.addDomListener(window, "load", initialize());
         });
     </script>
-
-
-
 @endsection

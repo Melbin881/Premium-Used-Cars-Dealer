@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/';
 
     public function __construct()
     {
@@ -27,7 +27,7 @@ class LoginController extends Controller
         $this->guard()->logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/dashboard');
+        return redirect('/');
     }
 
     protected function authenticated(Request $request, $user)
