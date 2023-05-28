@@ -1,0 +1,184 @@
+/* Add your custom styles here */
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Card */
+.card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #3490dc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 144, 220, 0.5);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #3490dc;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2779bd;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Error Messages */
+.invalid-feedback {
+  color: #dc3545;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* Success Message */
+.success-message {
+  color: #28a745;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Login Page */
+.login-form {
+  text-align: center;
+}
+
+.login-form-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form-footer {
+  margin-top: 20px;
+}
+
+/* Registration Page */
+.registration-form {
+  text-align: center;
+}
+
+.registration-form-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.registration-form-footer {
+  margin-top: 20px;
+}
+
+/* Dashboard Page */
+.dashboard-welcome {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dashboard-description {
+  margin-bottom: 20px;
+}
+
+.welcome {
+  margin-bottom: 30px;
+}
+
+.welcome-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-description {
+  margin-bottom: 10px;
+}
