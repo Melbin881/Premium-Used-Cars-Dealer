@@ -2,10 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Admin\Auth\LoginController as BackendLoginController;
+use App\Http\Controllers\Admin\Auth\RegisterController as BackendRegisterController;
+use App\Http\Controllers\Admin\Auth\ForgotPasswordController as BackendForgotPasswordController;
 use App\Http\Controllers\Backend\DashboardController;
+
+use App\Http\Controllers\Auth\LoginController as FrontendLoginController;
+use App\Http\Controllers\Auth\RegisterController as FrontendRegisterController;
+use App\Http\Controllers\Auth\ForgotPasswordController as FrontendForgotPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,25 +25,31 @@ use App\Http\Controllers\Backend\DashboardController;
 Route::group(['prefix'=>'dashboard', 'namespace'=>''], function () {
 
 // Authentication Routes
-Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('login', [LoginController::class, 'login']);
-Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('login', [BackendLoginController::class, 'showLoginForm'])->name('login');
+Route::post('login', [BackendLoginController::class, 'login']);
+Route::post('logout', [BackendLoginController::class, 'logout'])->name('logout');
 
 // Registration Routes
-Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('register', [RegisterController::class, 'register']);
+Route::get('register', [BackendRegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [BackendRegisterController::class, 'register']);
 
 // Password Reset Routes
-Route::get('password/reset', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-Route::post('password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
-Route::get('password/reset/{token}', [ForgotPasswordController::class, 'showResetForm'])->name('password.reset');
-Route::post('password/reset', [ForgotPasswordController::class, 'reset'])->name('password.update');
+Route::get('password/reset', [BackendForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('password/email', [BackendForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get('password/reset/{token}', [BackendForgotPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('password/reset', [BackendForgotPasswordController::class, 'reset'])->name('password.update');
 
 });
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 
+
+Route::get('login', [FrontendLoginController::class, 'showLoginForm'])->name('login');
+
+Route::get('/registration', function () {
+    return view('auth/registration');
+});
 
 Route::get('/', function () {
     return view('index');

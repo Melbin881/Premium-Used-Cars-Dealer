@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="ll" href="#"><img src="image/logo.png" alt="logo" /></a>
+                    <a class="ll" href="#"><img src="{{asset('asset/image/logo.png')}}" alt="logo" /></a>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="upmenu">
@@ -76,7 +76,7 @@
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="image/rolls-royce thumbnai.jpg" alt="rollsroyce" />
+                    <img src="{{asset('asset/image/rolls-royce thumbnai.jpg')}}" alt="rollsroyce" />
                     <div class="carousel-caption">
                         <h2>Rolls-royce</h2>
                         <p>
@@ -87,14 +87,14 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="image/bmw2.jpg" alt="BMW" />
+                    <img src="{{asset('asset/image/bmw2.jpg')}}" alt="BMW" />
                     <div class="carousel-caption">
                         <h2>BMW</h2>
                         <p>The Ultimate Driving Machine</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="image/mercedes thumbnail.jpg" alt="benz" />
+                    <img src="{{asset('asset/image/mercedes thumbnail.jpg')}}" alt="benz" />
                     <div class="carousel-caption">
                         <h2>Mercedes Benz AMG</h2>
                         <p>
@@ -167,11 +167,12 @@
             </nav>
         </div>
     </div>
+    
     <div class="allcontain">
         <div class="contact">
             <div class="newslettercontent">
                 <div class="leftside">
-                    <img id="image_border" src="image/border.png" alt="border" />
+                    <img id="image_border" src="{{asset('asset/image/border.png')}}" alt="border" />
                     <div class="contact-form">
                         <h1>Contact Us</h1>
                         <div class="form-group group-coustume">
