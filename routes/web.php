@@ -7,6 +7,9 @@ use App\Http\Controllers\Admin\Auth\BackendRegisterController;
 use App\Http\Controllers\Admin\Auth\BackendForgotPasswordController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,9 +46,8 @@ Route::get('/registration', function () {
     return view('auth/registration');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('index');
+
 
 Route::get('contact-us', function () {
     return view('contact-us');

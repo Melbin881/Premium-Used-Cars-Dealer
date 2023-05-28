@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/source/font-awesome-4.5.0/css/font-awesome.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/style/slider.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/style/mystyle.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('style/contactstyle.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('asset/style/contactstyle.css') }}" />
 </head>
 
 <body>
@@ -63,7 +63,7 @@
             </div>
             <div class="collapse navbar-collapse" id="upmenu">
                 <ul class="nav navbar-nav" id="navbarontop">
-                    <li class="active"><a href="#">HOME</a></li>
+                    <li class="active"><a href="{{route('index')}}">HOME</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdowncostume">
