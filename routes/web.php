@@ -39,14 +39,18 @@ Route::post('password/reset', [BackendForgotPasswordController::class, 'reset'])
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::view('/login','login');
+
+// Route::get('/login', [LoginController::class, 'showLoginForm'])->name('customerlogin');
+// Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/registration', function () {
     return view('auth/registration');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
+
 
 
 Route::get('contact-us', function () {
